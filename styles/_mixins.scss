@@ -1,0 +1,12 @@
+// mixin to generate media queries
+@mixin breakpoint($breakpoint-name, $breakpoints: $responsive-breakpoints) {
+  $value: map-get($breakpoints, $breakpoint-name);
+
+  @if ($value == 0) {
+    @content;
+  } @else {
+    @media (min-width: $value) {
+      @content;
+    }
+  }
+}
