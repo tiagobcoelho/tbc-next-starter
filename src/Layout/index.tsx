@@ -13,6 +13,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       {/* <Nav /> */}
       {children}
       {/* <Footer /> */}
+      two
     </div>
   );
 };
